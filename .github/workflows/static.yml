@@ -38,6 +38,8 @@ jobs:
         with:
           node-version: 20.x
           cache: npm
+      - name: 📦 Install dependencies
+        run: npm install
       - name: Build
         run: expo export --platform web
       - name: Upload artifact
